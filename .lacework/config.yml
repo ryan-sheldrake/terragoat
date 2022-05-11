@@ -6,8 +6,8 @@ pr_status_enabled: true
 # Maxium allowable findings, above which
 # PR status check will fail
 pr_status_thresholds:
-    critical: 0
-    high: 0
+    critical: 1
+    high: 1
     medium: 999
     low: 999
 
@@ -25,3 +25,4 @@ pr_comments_on_passed_check_enabled: false
 
 suppress:
   - "ckv-aws-24"
+  - "tfsec-aws006"
