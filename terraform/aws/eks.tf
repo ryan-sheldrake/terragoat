@@ -121,6 +121,7 @@ resource aws_eks_cluster "eks_cluster" {
   vpc_config {
     endpoint_private_access = true
     subnet_ids              = ["${aws_subnet.eks_subnet1.id}", "${aws_subnet.eks_subnet2.id}"]
+    endpoint_public_access  = false
   }
 
   depends_on = [
